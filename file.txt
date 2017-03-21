@@ -1,0 +1,4 @@
+2017-02-27 20:55:10.616 [Info] [com.cerebralgardens.xcglogger.defaultInstance] > Weather Version: 1.0 Build: 1 PID: 84316
+2017-02-27 20:55:10.616 [Info] [com.cerebralgardens.xcglogger.defaultInstance] > XCGLogger Version: 4.0.0 - Level: Info
+2017-02-27 20:55:10.618 [Info] [com.cerebralgardens.xcglogger.defaultInstance] > XCGLogger writing log to: file:///Users/wireless/Desktop/WeatherApp/file.txt
+2017-02-27 20:55:32.551 [Info] [com.cerebralgardens.xcglogger.defaultInstance] [ViewController.swift:75] passText() > memphis
