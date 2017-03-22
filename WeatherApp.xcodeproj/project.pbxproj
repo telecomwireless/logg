@@ -8,79 +8,79 @@
 
 /* Begin PBXBuildFile section */
 		878F7D12624307C480138FAB /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7BB47BCAE3CF13B5F23DDB /* Pods_WeatherApp.framework */; };
-		FD196B7D1E653CEF000D3C38 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD196B6E1E653CE6000D3C38 /* XCGLogger.framework */; };
-		FD196B7E1E653CEF000D3C38 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD196B6E1E653CE6000D3C38 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD2BE9231E481748007104B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2BE9221E481748007104B0 /* AppDelegate.swift */; };
 		FD2BE9251E481748007104B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2BE9241E481748007104B0 /* ViewController.swift */; };
 		FD2BE9281E481748007104B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2BE9261E481748007104B0 /* Main.storyboard */; };
 		FD2BE92A1E481748007104B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD2BE9291E481748007104B0 /* Assets.xcassets */; };
 		FD2BE92D1E481748007104B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD2BE92B1E481748007104B0 /* LaunchScreen.storyboard */; };
 		FD2BE9351E4845E4007104B0 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2BE9341E4845E4007104B0 /* DataModel.swift */; };
+		FDBC01711E820C2C007FB366 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBC01621E820C0E007FB366 /* XCGLogger.framework */; };
+		FDBC01721E820C2C007FB366 /* XCGLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FDBC01621E820C0E007FB366 /* XCGLogger.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FDFD5D7F1E722B1400CBEFF4 /* XCGloggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD5D7E1E722B1400CBEFF4 /* XCGloggerExtension.swift */; };
 		FDFD5D891E77615300CBEFF4 /* FileDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD5D881E77615300CBEFF4 /* FileDestination.swift */; };
 		FDFD5D911E7EF1D800CBEFF4 /* FileDestinationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD5D901E7EF1D800CBEFF4 /* FileDestinationExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FD196B6D1E653CE6000D3C38 /* PBXContainerItemProxy */ = {
+		FDBC01611E820C0E007FB366 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FD196B621E653CE6000D3C38 /* XCGLogger.xcodeproj */;
+			containerPortal = FDBC01561E820C0D007FB366 /* XCGLogger.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 55E3EE4519D76F280068C3A7;
 			remoteInfo = "XCGLogger (iOS)";
 		};
-		FD196B6F1E653CE6000D3C38 /* PBXContainerItemProxy */ = {
+		FDBC01631E820C0E007FB366 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FD196B621E653CE6000D3C38 /* XCGLogger.xcodeproj */;
+			containerPortal = FDBC01561E820C0D007FB366 /* XCGLogger.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 554DF41719D76FE7005708BE;
 			remoteInfo = "XCGLogger (OS X)";
 		};
-		FD196B711E653CE6000D3C38 /* PBXContainerItemProxy */ = {
+		FDBC01651E820C0E007FB366 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FD196B621E653CE6000D3C38 /* XCGLogger.xcodeproj */;
+			containerPortal = FDBC01561E820C0D007FB366 /* XCGLogger.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 70CB94201B99E728007802FF;
 			remoteInfo = "XCGLogger (watchOS)";
 		};
-		FD196B731E653CE6000D3C38 /* PBXContainerItemProxy */ = {
+		FDBC01671E820C0E007FB366 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FD196B621E653CE6000D3C38 /* XCGLogger.xcodeproj */;
+			containerPortal = FDBC01561E820C0D007FB366 /* XCGLogger.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 5515A3DF1BA119FA0047BA31;
 			remoteInfo = "XCGLogger (tvOS)";
 		};
-		FD196B751E653CE6000D3C38 /* PBXContainerItemProxy */ = {
+		FDBC01691E820C0E007FB366 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FD196B621E653CE6000D3C38 /* XCGLogger.xcodeproj */;
+			containerPortal = FDBC01561E820C0D007FB366 /* XCGLogger.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 55E3EE5019D76F280068C3A7;
 			remoteInfo = XCGLoggerTests_iOS;
 		};
-		FD196B771E653CE6000D3C38 /* PBXContainerItemProxy */ = {
+		FDBC016B1E820C0E007FB366 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FD196B621E653CE6000D3C38 /* XCGLogger.xcodeproj */;
+			containerPortal = FDBC01561E820C0D007FB366 /* XCGLogger.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 55BB1F011B79DC7500709779;
 			remoteInfo = XCGLoggerTests_OSX;
 		};
-		FD196B791E653CE6000D3C38 /* PBXContainerItemProxy */ = {
+		FDBC016D1E820C0E007FB366 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FD196B621E653CE6000D3C38 /* XCGLogger.xcodeproj */;
+			containerPortal = FDBC01561E820C0D007FB366 /* XCGLogger.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 558EEB851D6BAC61006A9C7A;
 			remoteInfo = XCGLoggerTests_watchOS;
 		};
-		FD196B7B1E653CE6000D3C38 /* PBXContainerItemProxy */ = {
+		FDBC016F1E820C0E007FB366 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FD196B621E653CE6000D3C38 /* XCGLogger.xcodeproj */;
+			containerPortal = FDBC01561E820C0D007FB366 /* XCGLogger.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 558EEB921D6BAC66006A9C7A;
 			remoteInfo = XCGLoggerTests_tvOS;
 		};
-		FD196B7F1E653CEF000D3C38 /* PBXContainerItemProxy */ = {
+		FDBC01731E820C2C007FB366 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FD196B621E653CE6000D3C38 /* XCGLogger.xcodeproj */;
+			containerPortal = FDBC01561E820C0D007FB366 /* XCGLogger.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 55E3EE4419D76F280068C3A7;
 			remoteInfo = "XCGLogger (iOS)";
@@ -94,7 +94,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FD196B7E1E653CEF000D3C38 /* XCGLogger.framework in Embed Frameworks */,
+				FDBC01721E820C2C007FB366 /* XCGLogger.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,7 +105,6 @@
 		60F96FFD57ADE8499EB8240F /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		BB7BB47BCAE3CF13B5F23DDB /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FBBE611A01D75A04C117F1 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
-		FD196B621E653CE6000D3C38 /* XCGLogger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XCGLogger.xcodeproj; path = ../BullsEye/Carthage/Checkouts/XCGLogger/Sources/XCGLogger.xcodeproj; sourceTree = "<group>"; };
 		FD2BE91F1E481748007104B0 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2BE9221E481748007104B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD2BE9241E481748007104B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +114,7 @@
 		FD2BE92E1E481748007104B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD2BE9341E4845E4007104B0 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		FD2BE93A1E499C8D007104B0 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBC01561E820C0D007FB366 /* XCGLogger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XCGLogger.xcodeproj; path = ../../../Bulls/Carthage/Checkouts/XCGLogger/Sources/XCGLogger.xcodeproj; sourceTree = "<group>"; };
 		FDFD5D7E1E722B1400CBEFF4 /* XCGloggerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XCGloggerExtension.swift; path = ../BullsEye/Carthage/Checkouts/XCGLogger/Sources/XCGLogger/XCGloggerExtension.swift; sourceTree = "<group>"; };
 		FDFD5D881E77615300CBEFF4 /* FileDestination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileDestination.swift; path = WeatherApp/FileDestination.swift; sourceTree = "<group>"; };
 		FDFD5D901E7EF1D800CBEFF4 /* FileDestinationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDestinationExtension.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				878F7D12624307C480138FAB /* Pods_WeatherApp.framework in Frameworks */,
-				FD196B7D1E653CEF000D3C38 /* XCGLogger.framework in Frameworks */,
+				FDBC01711E820C2C007FB366 /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,26 +150,11 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FD196B631E653CE6000D3C38 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FD196B6E1E653CE6000D3C38 /* XCGLogger.framework */,
-				FD196B701E653CE6000D3C38 /* XCGLogger.framework */,
-				FD196B721E653CE6000D3C38 /* XCGLogger.framework */,
-				FD196B741E653CE6000D3C38 /* XCGLogger.framework */,
-				FD196B761E653CE6000D3C38 /* XCGLoggerTests_iOS.xctest */,
-				FD196B781E653CE6000D3C38 /* XCGLoggerTests (OS X).xctest */,
-				FD196B7A1E653CE6000D3C38 /* XCGLoggerTests_watchOS.xctest */,
-				FD196B7C1E653CE6000D3C38 /* XCGLoggerTests_tvOS.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		FD2BE9161E481748007104B0 = {
 			isa = PBXGroup;
 			children = (
+				FDBC01561E820C0D007FB366 /* XCGLogger.xcodeproj */,
 				FDFD5D8A1E7765B300CBEFF4 /* Extensions */,
-				FD196B621E653CE6000D3C38 /* XCGLogger.xcodeproj */,
 				FD2BE93A1E499C8D007104B0 /* Alamofire.framework */,
 				FD2BE9211E481748007104B0 /* WeatherApp */,
 				FD2BE9201E481748007104B0 /* Products */,
@@ -200,6 +185,21 @@
 			path = WeatherApp;
 			sourceTree = "<group>";
 		};
+		FDBC01571E820C0D007FB366 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDBC01621E820C0E007FB366 /* XCGLogger.framework */,
+				FDBC01641E820C0E007FB366 /* XCGLogger.framework */,
+				FDBC01661E820C0E007FB366 /* XCGLogger.framework */,
+				FDBC01681E820C0E007FB366 /* XCGLogger.framework */,
+				FDBC016A1E820C0E007FB366 /* XCGLoggerTests_iOS.xctest */,
+				FDBC016C1E820C0E007FB366 /* XCGLoggerTests (OS X).xctest */,
+				FDBC016E1E820C0E007FB366 /* XCGLoggerTests_watchOS.xctest */,
+				FDBC01701E820C0E007FB366 /* XCGLoggerTests_tvOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		FDFD5D8A1E7765B300CBEFF4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,7 +228,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				FD196B801E653CEF000D3C38 /* PBXTargetDependency */,
+				FDBC01741E820C2C007FB366 /* PBXTargetDependency */,
 			);
 			name = WeatherApp;
 			productName = WeatherApp;
@@ -247,6 +247,7 @@
 				TargetAttributes = {
 					FD2BE91E1E481748007104B0 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TCF9498SUP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -264,8 +265,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = FD196B631E653CE6000D3C38 /* Products */;
-					ProjectRef = FD196B621E653CE6000D3C38 /* XCGLogger.xcodeproj */;
+					ProductGroup = FDBC01571E820C0D007FB366 /* Products */;
+					ProjectRef = FDBC01561E820C0D007FB366 /* XCGLogger.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -276,60 +277,60 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		FD196B6E1E653CE6000D3C38 /* XCGLogger.framework */ = {
+		FDBC01621E820C0E007FB366 /* XCGLogger.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = XCGLogger.framework;
-			remoteRef = FD196B6D1E653CE6000D3C38 /* PBXContainerItemProxy */;
+			remoteRef = FDBC01611E820C0E007FB366 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FD196B701E653CE6000D3C38 /* XCGLogger.framework */ = {
+		FDBC01641E820C0E007FB366 /* XCGLogger.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = XCGLogger.framework;
-			remoteRef = FD196B6F1E653CE6000D3C38 /* PBXContainerItemProxy */;
+			remoteRef = FDBC01631E820C0E007FB366 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FD196B721E653CE6000D3C38 /* XCGLogger.framework */ = {
+		FDBC01661E820C0E007FB366 /* XCGLogger.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = XCGLogger.framework;
-			remoteRef = FD196B711E653CE6000D3C38 /* PBXContainerItemProxy */;
+			remoteRef = FDBC01651E820C0E007FB366 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FD196B741E653CE6000D3C38 /* XCGLogger.framework */ = {
+		FDBC01681E820C0E007FB366 /* XCGLogger.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = XCGLogger.framework;
-			remoteRef = FD196B731E653CE6000D3C38 /* PBXContainerItemProxy */;
+			remoteRef = FDBC01671E820C0E007FB366 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FD196B761E653CE6000D3C38 /* XCGLoggerTests_iOS.xctest */ = {
+		FDBC016A1E820C0E007FB366 /* XCGLoggerTests_iOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = XCGLoggerTests_iOS.xctest;
-			remoteRef = FD196B751E653CE6000D3C38 /* PBXContainerItemProxy */;
+			remoteRef = FDBC01691E820C0E007FB366 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FD196B781E653CE6000D3C38 /* XCGLoggerTests (OS X).xctest */ = {
+		FDBC016C1E820C0E007FB366 /* XCGLoggerTests (OS X).xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "XCGLoggerTests (OS X).xctest";
-			remoteRef = FD196B771E653CE6000D3C38 /* PBXContainerItemProxy */;
+			remoteRef = FDBC016B1E820C0E007FB366 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FD196B7A1E653CE6000D3C38 /* XCGLoggerTests_watchOS.xctest */ = {
+		FDBC016E1E820C0E007FB366 /* XCGLoggerTests_watchOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = XCGLoggerTests_watchOS.xctest;
-			remoteRef = FD196B791E653CE6000D3C38 /* PBXContainerItemProxy */;
+			remoteRef = FDBC016D1E820C0E007FB366 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FD196B7C1E653CE6000D3C38 /* XCGLoggerTests_tvOS.xctest */ = {
+		FDBC01701E820C0E007FB366 /* XCGLoggerTests_tvOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = XCGLoggerTests_tvOS.xctest;
-			remoteRef = FD196B7B1E653CE6000D3C38 /* PBXContainerItemProxy */;
+			remoteRef = FDBC016F1E820C0E007FB366 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -412,10 +413,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FD196B801E653CEF000D3C38 /* PBXTargetDependency */ = {
+		FDBC01741E820C2C007FB366 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "XCGLogger (iOS)";
-			targetProxy = FD196B7F1E653CEF000D3C38 /* PBXContainerItemProxy */;
+			targetProxy = FDBC01731E820C2C007FB366 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -536,6 +537,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TCF9498SUP;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fedex.WeatherApp;
@@ -550,6 +552,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TCF9498SUP;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fedex.WeatherApp;

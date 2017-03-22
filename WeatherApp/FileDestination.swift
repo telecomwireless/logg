@@ -13,26 +13,10 @@ import XCGLogger
 
 open class FileDestination: BaseDestination{
     
+    //added
 let fileManager: FileManager = FileManager.default
-
-    public enum Rotation {
-        case none
-        case onlyAtAppStart
-        case alsoWhileWriting
-        public var description: String {
-            switch self {
-            case .none:
-                return "None"
-            case .onlyAtAppStart:
-                return "onlyAtAppStart"
-            case .alsoWhileWriting:
-                return "alsoWhileWriting"
-            }
-        }
-    }
     
     
-    open var rotation = Rotation.none
     open var rotationFileSizeBytes = 1024  // 1M
     open var rotationFilesMax = 1
     open var rotationFileDateFormat = "-yyyy-MM-dd'T'HH:mm"
@@ -52,10 +36,10 @@ let fileManager: FileManager = FileManager.default
                 let path = writeToFileURL!.path
                 let indexAfterSlash = path.range(of: "/", options: .backwards)!.upperBound
                 logFileDirectory = path.substring(to: indexAfterSlash)
+            
+                   //added
+                    self.rotateFileAuto()
                 
-                if self.rotation != .none {
-                    self.rotateFileAuto(cause: .alsoWhileWriting)
-                }
                 openFile()
             }
             else {
@@ -199,6 +183,7 @@ let fileManager: FileManager = FileManager.default
     ///     - true:     Log file rotated successfully.
     ///     - false:    Error rotating the log file.
     ///
+    
     @discardableResult open func rotateFile(to archiveToFile: Any) -> Bool {
         var archiveToFileURL: URL? = nil
         
@@ -248,26 +233,12 @@ let fileManager: FileManager = FileManager.default
     ///
     /// - Returns:  Nothing
     ///
-    
-    open func logFileSizeMonitor() {
-        
-      //  let fileSize:Int? = try? FileManager.default.attributesOfItem(atPath: "/Users/wireless/Desktop/Weather/file.txt")[FileAttributeKey.size] as! Int
-        
-     //   print(fileSize!)
-        
-        print("bow bow ")
-    }
-    
-    
-    open func fileNameFormatter(fileNaming: String?) {
-        
+
+    open func logFileName(fileNaming: String?) {
         var nameFormatter: DateFormatter
         let defaultDateFormatter = DateFormatter()
         defaultDateFormatter.locale = NSLocale.current
         defaultDateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
-        //return defaultDateFormatter
-        
-        
     }
     
     
@@ -293,8 +264,8 @@ let fileManager: FileManager = FileManager.default
           //      })
             }
             
-            guard self.rotation == .alsoWhileWriting else {return}
-            self.rotateFileAuto(cause: .alsoWhileWriting)
+            //added
+            self.rotateFileAuto()
         }
         
         if let logQueue = logQueue {
@@ -328,9 +299,6 @@ let fileManager: FileManager = FileManager.default
     /// - Returns: Array of log file URLs, sorted
     ///
     
-    
-    
-    
     private var rotationFailedBefore = false
     private var rotateAutoCalledBefore = false
     private var logFileBaseName = ""
@@ -342,7 +310,7 @@ let fileManager: FileManager = FileManager.default
     /// - Returns:  Nothing
     ///
     
-    func rotateFileAuto(cause: Rotation) {  // parameter unnecessary. for clarity only
+    func rotateFileAuto() {  // parameter unnecessary. for clarity only
        // let fileManager = FileManager.default
         let path = writeToFileURL!.path
         
@@ -412,7 +380,7 @@ let fileManager: FileManager = FileManager.default
         var action = ""
         
         do {
-            //let fileManager = FileManager.default
+           
             
             // assemble a dictionary of date:file
             var fileDateMap = [NSDate: String]()
@@ -454,12 +422,10 @@ let fileManager: FileManager = FileManager.default
         
     //   let logDir =  fileManager.path
         let documentsPath = "/Users/wireless/Documents/logs"
-        
-       // print(documentsPath!)
+    
         
         do {
-      //      if let documentPath = documentsPath
-        //    {
+
                 let fileNames = try self.fileManager.contentsOfDirectory(atPath: "\(documentsPath)")
                 print("all files in log dir: \(fileNames)")
                 for fileName in fileNames {
@@ -473,7 +439,7 @@ let fileManager: FileManager = FileManager.default
                 
                 let files = try self.fileManager.contentsOfDirectory(atPath: "\(documentsPath)")
                 print("all files in cache after deleting images: \(files)")
-         //   }
+
             
         } catch {
             print("Could not clear temp folder: \(error)")
